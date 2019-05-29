@@ -1,5 +1,6 @@
 # Riddler-FallenVsAlive
-My solution to FiveThirtyEight's Riddler classic question of 17-5-19
+My solution to FiveThirtyEight's Riddler classic question of 17-5-19, found here:
+
 https://fivethirtyeight.com/features/how-many-soldiers-do-you-need-to-beat-the-night-king/
 
 # Dependencies
