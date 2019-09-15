@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>ClassicRoadTrip</title>
+<title>classic</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,12 +13116,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Can-You-Help-Dakota-Jones-Raid-The-Lost-Arc?---Riddler-Classic-Solution">Can You Help Dakota Jones Raid The Lost Arc? - Riddler Classic Solution<a class="anchor-link" href="#Can-You-Help-Dakota-Jones-Raid-The-Lost-Arc?---Riddler-Classic-Solution">&#182;</a></h1><p>The Riddler Classic's challenge for the week of September 13, 2019 is as follows:</p>
+<h1 id="Can-You-Help-Dakota-Jones-Raid-The-Lost-Arc?---Riddler-Classic-Solution">Can You Help Dakota Jones Raid The Lost Arc? - Riddler Classic Solution<a class="anchor-link" href="#Can-You-Help-Dakota-Jones-Raid-The-Lost-Arc?---Riddler-Classic-Solution">&#182;</a></h1><p>The <a href="https://fivethirtyeight.com/features/can-you-help-dakota-jones-raid-the-lost-arc/">Riddler Classic</a> challenge for the week of September 13, 2019 is as follows:</p>
 <blockquote><p>The challenge is to find the longest string of letters in which (1) every pair of consecutive letters is a two-letter state or territory abbreviation, and (2) no state abbreviation occurs more than once. For example, Guam, Utah and Texas can be combined into the valid four-letter string GUTX. Another valid string is ALAK (Alabama, Louisiana and Alaska), while ALAL (Alabama, Louisiana and Alabama) is invalid because it includes the same state, Alabama, twice.</p>
 </blockquote>
 <p>My first thought was to write a python script that iterates through all the possible combinations to find the one with the most non-repeating states. Realistically it will take a very long time since it's and exponential function with 50 choices in the first spot, but I will try running it first on my machine and, when I give up inevitably, on a lab machine at Carleton University while I study all day and will hopefully get an answer by the end of the day. Once the program finishes its run I will update this page with the calculated result including both the string and the number of states that it concatenates.</p>
 <p>Meanwhile, here's a breakdown of the python script:</p>
 <h2 id="Code">Code<a class="anchor-link" href="#Code">&#182;</a></h2><p>I first needed to write out the state codes in an array.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I initialized two global variable which will be compared to each completed string and edited to hold the maximum values.</p>
 
 </div>
 </div>
@@ -13138,14 +13146,6 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I initialized two global variable which will be compared to each completed string and edited to hold the maximum values.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
