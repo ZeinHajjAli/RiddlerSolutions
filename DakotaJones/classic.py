@@ -4,7 +4,7 @@ maxLength = 0
 maxRoute = []
 
 def routeFinder():
-    unusedStates = states.copy()
+    unusedStates = states[:]
     route = []
     everyOption(route, unusedStates, unusedStates)
     print("The maximum states that can be done in this way are {}\n".format(maxLength))
@@ -15,9 +15,9 @@ def everyOption(route, unusedStates, nextStates):
     newRoute = []
     print(route)
     for nextState in nextStates:
-        newUnusedStates = unusedStates.copy()
+        newUnusedStates = unusedStates[:]
         newUnusedStates.remove(nextState)
-        newRoute = route.copy()
+        newRoute = route[:]
         newRoute.append(nextState)
         routeBuilder(newRoute, newUnusedStates)
 
